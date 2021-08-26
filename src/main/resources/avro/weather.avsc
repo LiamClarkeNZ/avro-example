@@ -1,0 +1,44 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": "float"
+    },
+    {
+      "name": "payload",
+      "type": {
+        "fields": [
+          {
+            "name": "temperature",
+            "type": "float"
+          },
+          {
+            "name": "humidity",
+            "type": "float"
+          },
+          {
+            "name": "pressure",
+            "type": "float"
+          },
+          {
+            "name": "luminosity",
+            "type": "float"
+          },
+          {
+            "name": "test",
+            "type": "string"
+          }
+        ],
+        "name": "payload",
+        "type": "record"
+      }
+    }
+  ],
+  "name": "Metrics",
+  "namespace": "com.dcss.anz",
+  "type": "record"
+}
